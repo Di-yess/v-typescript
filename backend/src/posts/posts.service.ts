@@ -12,7 +12,7 @@ export class PostsService {
     const { id } = req.user;
     try {
       const posts = await this.prisma.post.findMany({ where: { userId: id } });
-      return { posts } || { posts: [] };
+      return JSON.stringify(posts);
     } catch (err) {
       throw err;
     }

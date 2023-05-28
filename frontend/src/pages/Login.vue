@@ -30,7 +30,9 @@ const { error, submitInfo } = useSubmit();
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 9px;
+  height: 70vh;
 }
 
 .input {
